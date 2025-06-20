@@ -26,7 +26,7 @@ public class RecetteServiceImpl implements RecetteService {
 
     @Override
     public Recette addRecette(Recette recette) {
-        return null;
+        return recetteRepository.save(recette);
     }
 
     @Override
