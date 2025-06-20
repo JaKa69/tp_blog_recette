@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface CategoryService {
     Category addCategory(Category category);
-    Category getCategory(Long categoryId);
+    Category getCategory(Long categoryId) throws Exception;
     List<Category> getAllCategory();
-    List<Recette> getAllRecettesByCategory();
+    List<Recette> getAllRecettesByCategory(Category category);
 }

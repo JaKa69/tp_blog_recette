@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface CommentaireService {
     Commentaire addCommentaire(Commentaire commentaire);
-    Commentaire getCommentaireById(Long commentaireId);
+    Commentaire getCommentaireById(Long commentaireId) throws Exception;
     List<Commentaire> getAllCommentaires();
 }
